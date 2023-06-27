@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <style>
+            body {
+                background-color:rgb(16, 150, 187);
+                color: white;
+                text-align: center;
+                padding-right: 90px;
+            }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <div class="container">
+            <a style="text-decoration:none" href="/">
+            <h1 style="font-size: 28; text-align: center; font-weight: bold; color:white">Strength of Concrete Predictor</h1>
+            </a>
+        </div>
+        
+        <div class="container">
+            <form action={% url 'result' %}>
+                {% csrf_token %}
+                <table class="center">
+                    <tr>
+                    <td><label for="Fly ash">Fly ash:</label></td>
+                    <td><input type="text" required name="Fly ash"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Cement">Cement:</label></td>
+                        <td><input type="text" required name="Cement"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Slag">Slag:</label></td>
+                        <td><input type="text" required name="Slag"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Water">Water:</label></td>
+                        <td><input type="text" required name="Water"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="SP">SP:</label></td>
+                        <td><input type="text" required name="SP"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Coarse Aggr.">Coarse Aggr.:</label></td>
+                        <td><input type="text" required name="Coarse Aggr."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Fine Aggr.">Fine Aggr.:</label></td>
+                        <td><input type="text" required name="Fine Aggr."></td>
+                    </tr>
+                </table><br><br>
+                <input type="submit" name="" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
